@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 Written by Timo Sugliani
 Github: https://github.com/tsugliani/
@@ -25,7 +26,7 @@ python execute_program_in_vm.py
 
 """
 from __future__ import with_statement
-import atexit
+import atexit, re, time
 from tools import cli
 from pyVim import connect
 from pyVmomi import vim, vmodl
